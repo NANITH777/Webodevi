@@ -1,0 +1,102 @@
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #ef4b3f;
+}
+
+.top-bar span{
+    color: #fff;
+}
+
+.top-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li{
+    margin: 0px 5px;
+}
+
+.top-bar a{
+    color: #fff;
+}
+
+.top-bar a:hover{
+    color: #222;
+}
+
+nav{
+    background: #222;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav a:hover{
+    color: #ef4b3f;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover{
+    color:#ef4b3f;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style:none;
+}
+
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+}
