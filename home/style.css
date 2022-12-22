@@ -140,3 +140,30 @@ nav a:hover{
     color: #ef4b3f;
     text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 600px){
+
+    .main{
+        height: 235vh;
+    }
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
