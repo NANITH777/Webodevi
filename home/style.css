@@ -141,8 +141,6 @@ nav a:hover{
     text-decoration: none;
 }
 
-
-
 @media screen and (max-width: 600px){
 
     .main{
@@ -166,4 +164,12 @@ nav a:hover{
         top: 15px;
         right: 20px;
     }
+
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+
 }
