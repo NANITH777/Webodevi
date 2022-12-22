@@ -102,3 +102,41 @@ nav a:hover{
     font-size: 30px;
     display: none;
 }
+
+.text{
+    width: 40%;
+    height: 40vh;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.text h1{
+    color: #ef4b3f;
+    position: absolute;
+    margin-left: 3.5%;
+    margin-top: 5%;
+    /*font-size: 50px;*/
+    font-size: 3.5vw;
+}
+
+.text button{
+    position: absolute;
+    width: 12%;
+    height: 5vh;
+    font-size: 2vw;
+    color: #ef4b3f;
+    margin-top: 12%;
+    margin-left: 15%;
+    background-color: transparent;
+    border-radius: 35px;
+    border-color: #ef4b3f;
+    cursor: pointer;
+    transition: 1s;
+}
+.text button:hover{
+    color:white;
+    background-color: white;
+}
+.text button a{
+    color: #ef4b3f;
+    text-decoration: none;
+}
