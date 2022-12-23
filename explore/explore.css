@@ -146,7 +146,6 @@ content h3{
 
 .context{
     width: 100%;
-   /* height: 100vh;*/
 }
 .context h1{
     text-align: center;
@@ -182,7 +181,7 @@ content h3{
     display: block;
     float: left;
     height: 80px;
-    background-color: #f3f5fa;
+    background-color: #ccc;
     text-align: center;
     padding: 30px 20px 0 60px;
     position: relative;
@@ -195,7 +194,7 @@ content h3{
     content: "";
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
-    border-left: 40px solid #f3f5fa;
+    border-left: 40px solid #ccc;
     position: absolute;
     right: -40px;
     top: 0;
@@ -232,4 +231,132 @@ content h3{
 .bread-crumbs ul li a:hover::after{
     border-left-color: #0000ff;
     color: #fff;
+}
+
+.section{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider2{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide input{
+    display: none;
+}
+
+.images{
+    width: 20%;
+    transition: 2s;
+}
+
+.images img{
+    width: 800px;
+    height: 500px;
+}
+
+.nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+
+.m-btn{
+    border: 2px solid #0000ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background: #0000ff;
+}
+
+#radio1:checked ~.i1{
+    margin-left: 0;
+}
+#radio2:checked ~.i1{
+    margin-left: -20%;
+}
+#radio3:checked ~.i1{
+    margin-left: -40%;
+}
+#radio4:checked ~.i1{
+    margin-left: -60%;
+}
+#radio5:checked ~.i1{
+    margin-left: -80%;
+}
+#radio6:checked ~.i1{
+    margin-left: -100%;
+}
+#radio7:checked ~.i1{
+    margin-left: -120%;
+}
+#radio8:checked ~.i1{
+    margin-left: -140%;
+}
+
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div{
+    border: 2px solid #0000ff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~.nav-auto .a-b1{
+    background-color: #0000ff;
+}
+#radio2:checked ~.nav-auto .a-b2{
+    background-color: #0000ff;
+}
+#radio3:checked ~.nav-auto .a-b3{
+    background-color: #0000ff;
+}
+#radio4:checked ~.nav-auto .a-b4{
+    background-color: #0000ff;
+}
+#radio5:checked ~.nav-auto .a-b5{
+    background-color: #0000ff;
+}
+#radio6:checked ~.nav-auto .a-b6{
+    background-color: #0000ff;
+}
+#radio7:checked ~.nav-auto .a-b7{
+    background-color: #0000ff;
+}
+#radio8:checked ~.nav-auto .a-b8{
+    background-color: #0000ff;
 }

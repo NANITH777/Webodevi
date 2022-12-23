@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="explore.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="explore.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -45,57 +47,118 @@
             </div>
         </div>
     </div>
-</div>
-<script>
-    var slideimg=document.getElementById("slideimg");
-    var images=new Array(
-        "image2/i5.jpg",
-        "image2/im2.jpg",
-        "image2/im3.jpg",
-        "image2/i4.jpg"
-    );
-    var len=images.length;
-    var i=0;
-    function slider(){
-        if(i > len-1)
-        {
-            i=0;
+
+    <script>
+        var slideimg=document.getElementById("slideimg");
+        var images=new Array(
+            "image2/i5.jpg",
+            "image2/im2.jpg",
+            "image2/im3.jpg",
+            "image2/i4.jpg"
+        );
+        var len=images.length;
+        var i=0;
+        function slider(){
+            if(i > len-1)
+            {
+                i=0;
+            }
+            slideimg.src=images[i];
+            i++;
+            setTimeout('slider()', 3000);
         }
-        slideimg.src=images[i];
-        i++;
-        setTimeout('slider()', 3000);
-    }
-</script>
+    </script>
 
-<div class="bread-crumbs">
-    <ul>
-        <li><a href="../home/index.html"><i class="fa fa-home"></i>Home</a></lu>
-        <li><a href="../about/about.html"><i class="fa fa-life-ring"></i>About</a></lu>
-        <li><a href="#history"><i class="fa fa-history"></i>History</a></lu>
-        <li><a href="../contact/contact.html"><i class="fa fa-phone"></i>Contact</a></lu>
-    </ul>
-</div>
+    <div class="bread-crumbs">
+        <ul>
+            <li><a href="../home/index.html"><i class="fa fa-home"></i>Home</a></lu>
+            <li><a href="../about/about.html"><i class="fa fa-life-ring"></i>About</a></lu>
+            <li><a href="#history"><i class="fa fa-history"></i>History</a></lu>
+            <li><a href="../contact/contact.html"><i class="fa fa-phone"></i>Contact</a></lu>
+        </ul>
+    </div>
 
-<div class="context">
-    <h1>Presentation of Africa</h1>
+    <div class="context">
+        <h1>Presentation of Africa</h1>
 
-    <p><img src="image2/carte-afrique.gif" alt="carte of Africa">
-    Africa, the second largest continent (after Asia), covering about one-fifth of 
-    the total land surface of Earth. The continent is bounded on the west by the Atlantic Ocean, 
-    on the north by the Mediterranean Sea, on the east by the Red Sea and the Indian Ocean,
-     and on the south by the mingling waters of the Atlantic and Indian oceans. Africa’s total land
-      area is approximately 11,724,000 square miles (30,365,000 square km), and the continent measures
-    about 5,000 miles (8,000 km) from north to south and about 4,600 miles (7,400 km) from east to west.
-     Its northern extremity is Al-Ghīrān Point, near Al-Abyaḍ Point (Cape Blanc), Tunisia; its southern extremity 
-     is Cape Agulhas, South Africa; its farthest point east is Xaafuun (Hafun) Point, near Cape Gwardafuy (Guardafui), 
-     Somalia; and its western extremity is Almadi Point (Pointe des Almadies), on Cape Verde (Cap Vert), Senegal.
-    In the northeast, Africa was joined to Asia by the Sinai Peninsula until the construction of the Suez Canal.
-     Paradoxically, the coastline of Africa—18,950 miles (30,500 km) in length—is shorter than that of Europe,
-     because there are few inlets and few large bays or gulfs. 
-   </p>
+        <p><img src="image2/carte-afrique.gif" alt="carte of Africa">
+        Africa, the second largest continent (after Asia), covering about one-fifth of 
+        the total land surface of Earth. The continent is bounded on the west by the Atlantic Ocean, 
+        on the north by the Mediterranean Sea, on the east by the Red Sea and the Indian Ocean,
+        and on the south by the mingling waters of the Atlantic and Indian oceans. Africa’s total land
+        area is approximately 11,724,000 square miles (30,365,000 square km), and the continent measures
+        about 5,000 miles (8,000 km) from north to south and about 4,600 miles (7,400 km) from east to west.
+        Its northern extremity is Al-Ghīrān Point, near Al-Abyaḍ Point (Cape Blanc), Tunisia; its southern extremity 
+        is Cape Agulhas, South Africa; its farthest point east is Xaafuun (Hafun) Point, near Cape Gwardafuy (Guardafui), 
+        Somalia; and its western extremity is Almadi Point (Pointe des Almadies), on Cape Verde (Cap Vert), Senegal.
+        In the northeast, Africa was joined to Asia by the Sinai Peninsula until the construction of the Suez Canal.
+        Paradoxically, the coastline of Africa—18,950 miles (30,500 km) in length—is shorter than that of Europe,
+        because there are few inlets and few large bays or gulfs. 
+    </p>
 
-   <h1>Some Africans Cities</h1>
-</div>
+    <h1>Some Africans Cities</h1>
+    </div>
+
+    <section class="section">
+        <div class="slider2">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+
+                <div class="images i1">
+                    <img src="image2/image/Alger.jpg" alt="hello">
+                </div>
+                <div class="images">
+                    <img src="image2/image/Brazzaville.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/capetown.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/casablanca.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/ima6.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/ima5.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/ima2.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="image2/image/im1.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                    <div class="a-b5"></div>
+                    <div class="a-b6"></div>
+                    <div class="a-b7"></div>
+                    <div class="a-b8"></div>
+                </div>
+            </div>
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+                <label for="radio5" class="m-btn"></label>
+                <label for="radio6" class="m-btn"></label>
+                <label for="radio7" class="m-btn"></label>
+                <label for="radio8" class="m-btn"></label>
+            </div>
+        </div>
+    </section>
 
 
 
