@@ -404,3 +404,58 @@ div.desc {
     display: table;
     clear: both;
 }
+
+footer{
+    background:#777;
+    height: 80px;
+    padding: 25px;
+    text-align: center;
+}
+footer span a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    color: #0000ff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px)
+{
+    nav{
+        display: block;
+        position: relative;
+        padding: 50px;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    .Cities {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    .slider2{
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .images img{
+        width: 400px;
+        height: 300px;
+    }
+}
