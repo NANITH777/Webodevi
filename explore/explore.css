@@ -360,3 +360,47 @@ content h3{
 #radio8:checked ~.nav-auto .a-b8{
     background-color: #0000ff;
 }
+
+
+.section2 h1{
+    text-align: center;
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin: 50px
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.Cities {
+    padding: 10px 6px;
+    float: left;
+    width: 24.99999%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
