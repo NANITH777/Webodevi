@@ -128,35 +128,6 @@ nav a:hover{
     font-weight: 300;
     color: #fff;
 }
-
-.contact{
-    position: relative;
-    padding: 50px 100px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
-}
-
-.main .content{
-    width: 250px;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 40%;
-}
-
-.main .content h2{
-    font-size: 2vw;
-    font-weight: 500;
-    color: #ef4b3f;
-}
-.main .content p{
-    font-size: 1.1vw;
-    font-weight: 300;
-    color: #fff;
-}
 .container{
     width: 100%;
     display: flex;
@@ -226,4 +197,45 @@ nav a:hover{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+
+/*-------------------------------*/
+footer{
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 15px 0 30px ;
+    border-top-left-radius: 125px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+@media (max-width: 600px)
+{
+    .main
+    {
+        height: 300vh;
+    }
+ 
+    .contact{
+        padding: 50px;
+    }
+    .main .content{
+        width: 100px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .container .map,
+    .contactForm
+    {
+        width: 100%;
+    }
+
+    .map iframe{
+        height: 375px;
+    }
 }
