@@ -13,15 +13,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #777;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(image/back.jpg);
+    position: cover;
 }
 
 .overlay{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    /*background: linear-gradient(rgba( 0,0,0,0.7),rgba( 0,0,0,0.7));*/
-    background: #777;
     opacity: 0.7;
     position: absolute;
     top: 0;
@@ -143,7 +143,7 @@ nav a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #777;
+    background-color:#000;
     border-left: 4px solid #0000ff;
     animation: typing 3s steps(10) infinite;
 }
@@ -153,5 +153,118 @@ nav a:hover{
     }
     100%{
         left: 0;
+    }
+}
+
+.revolution h1{
+    text-align: center;
+    margin: 40px auto;
+    padding: auto;
+    font-weight: 800;
+
+}
+
+/*-------- content-------*/
+.section-container{
+    --bs-gutter-x:1.5rem;
+    --bs-gutter-y:0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+.section-container .columns{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.section-container .columns.image
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-container .columns.content .content-container {
+    padding: 40px 50px;
+}
+.section-container .columns.content .content-container h5{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.section-container .columns.content .content-container p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+@media (max-width: 600px)
+{
+    nav{
+        display: block;
+        position: relative;
+        padding: 50px;
+        padding: 15px 20px;
+    }
+    .menu{
+        margin-top: 15px;
+        display: none;
+    }
+    .menu.active, .toggle{
+        display: block;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    .wrapper{
+        display: block;
+    }
+    .wrapper .static-text{
+        margin-top: 35px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .wrapper .dynamic-texts{
+        margin-left: 10px;
+        line-height: 45px;
+        height: 45px;
+        overflow: hidden;
+    }
+    .dynamic-texts li{
+        font-size: 30px;
+        font-weight: 250;
+        top: 0;
+    }
+    @keyframes slide{
+        100%{top: -180px;}
+    }
+    .section-container{
+        flex-flow: row wrap;
+    }
+    .section-container .columns.image{
+        display: block;
+        order: 1;
+        width: 100%;
+        height: 250px;
+    }
+    .section-container .columns.content{
+        display: block;
+        order: 2;
+        width: 100%;
+    }
+    .section-container .columns.content .content-container{
+        padding: 20px 35px;
+    }
+    .section-container .columns.content .content-container h5{
+        margin-bottom: 5px;
     }
 }
