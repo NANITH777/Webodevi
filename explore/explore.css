@@ -146,6 +146,7 @@ content h3{
 
 .context{
     width: 100%;
+   /* height: 100vh;*/
 }
 .context h1{
     text-align: center;
@@ -163,6 +164,34 @@ content h3{
 .context p{
     font-size: 1.5vw;
     margin: 15px;
+}
+
+.slider2 .heading{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+  
+.slider2 h1:after {
+    display: block;
+    height: 2px;
+    background-color: #0000ff;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+  
+.carousel-slide {
+    width: 80%;
+    margin: auto;
+    height: 60%;
+}
+   
+.carousel-slide h1 {
+    color: #0000ff;
 }
 
 .bread-crumbs{
@@ -233,135 +262,6 @@ content h3{
     color: #fff;
 }
 
-.section{
-    margin:0;
-    padding:0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider2{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.slide{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-
-.slide input{
-    display: none;
-}
-
-.images{
-    width: 20%;
-    transition: 2s;
-}
-
-.images img{
-    width: 800px;
-    height: 500px;
-}
-
-.nav-m{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    justify-content: center;
-    display: flex;
-}
-
-.m-btn{
-    border: 2px solid #0000ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.m-btn:not(:last-child){
-    margin-right: 30px;
-}
-.m-btn:hover{
-    background: #0000ff;
-}
-
-#radio1:checked ~.i1{
-    margin-left: 0;
-}
-#radio2:checked ~.i1{
-    margin-left: -20%;
-}
-#radio3:checked ~.i1{
-    margin-left: -40%;
-}
-#radio4:checked ~.i1{
-    margin-left: -60%;
-}
-#radio5:checked ~.i1{
-    margin-left: -80%;
-}
-#radio6:checked ~.i1{
-    margin-left: -100%;
-}
-#radio7:checked ~.i1{
-    margin-left: -120%;
-}
-#radio8:checked ~.i1{
-    margin-left: -140%;
-}
-
-.nav-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 460px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-auto div{
-    border: 2px solid #0000ff;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-.nav-auto div:not(:last-child){
-    margin-right: 30px;
-    justify-content: center;
-}
-
-#radio1:checked ~.nav-auto .a-b1{
-    background-color: #0000ff;
-}
-#radio2:checked ~.nav-auto .a-b2{
-    background-color: #0000ff;
-}
-#radio3:checked ~.nav-auto .a-b3{
-    background-color: #0000ff;
-}
-#radio4:checked ~.nav-auto .a-b4{
-    background-color: #0000ff;
-}
-#radio5:checked ~.nav-auto .a-b5{
-    background-color: #0000ff;
-}
-#radio6:checked ~.nav-auto .a-b6{
-    background-color: #0000ff;
-}
-#radio7:checked ~.nav-auto .a-b7{
-    background-color: #0000ff;
-}
-#radio8:checked ~.nav-auto .a-b8{
-    background-color: #0000ff;
-}
-
-
 .section2 h1{
     text-align: center;
     font-size: 4.5vw;
@@ -376,21 +276,21 @@ div.gallery {
 div.gallery:hover {
     border: 1px solid #777;
 }
-
+  
 div.gallery img {
     width: 100%;
     height: auto;
 }
-
+  
 div.desc {
     padding: 15px;
     text-align: center;
 }
-
-*{
+  
+* {
     box-sizing: border-box;
 }
-
+  
 .Cities {
     padding: 10px 6px;
     float: left;
@@ -447,16 +347,14 @@ footer span a:hover {
     .Cities {
         width: 49.99999%;
         margin: 6px 0;
-      }
-    .slider2{
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-        overflow: hidden;
     }
-    .images img{
-        width: 400px;
-        height: 300px;
+    .carousel-slide h4 {
+        display: none;
     }
-    
+      .carousel-slide h1 {
+        margin-bottom: 0;
+    }
+    .bread-crumbs{
+        display: block;
+    }
 }
