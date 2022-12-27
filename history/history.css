@@ -202,6 +202,24 @@ nav a:hover{
     text-align: justify;
 }
 
+footer{
+    background:#777;
+    height: 80px;
+    padding: 25px;
+    text-align: center;
+}
+footer span a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    color: #0000ff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
 
 @media (max-width: 600px)
 {
