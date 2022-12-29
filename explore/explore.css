@@ -146,7 +146,6 @@ content h3{
 
 .context{
     width: 100%;
-   /* height: 100vh;*/
 }
 .context h1{
     text-align: center;
@@ -222,11 +221,6 @@ content h3{
     width: 750px;
     object-fit: cover;
 }
-
-/*.bread-crumbs{
-    margin: 50px auto;
-    text-align: center;
-}*/
 
 .section2 h1{
     text-align: center;
