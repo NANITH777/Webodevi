@@ -261,6 +261,7 @@ footer span a:hover {
     }
     .wrapper{
         display: block;
+        margin-top: 60px;
     }
     .wrapper .static-text{
         margin-top: 35px;
