@@ -189,8 +189,8 @@ content h3{
     height: 60%;
 }
    
-.carousel-slide h1 {
-    color: #0000ff;
+.carousel-slide h1, .carousel-slide h4 {
+    color: #fff;
 }
 
 .slider2 .popup-image{
