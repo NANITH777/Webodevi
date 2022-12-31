@@ -16,7 +16,7 @@ body{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../image/afro3.jpg);
     background-position: center;
     background-size: cover;
-    height: 130vh;
+    height: 155vh;
 }
 
 a, a:hover{
@@ -35,7 +35,6 @@ a, a:hover{
     position: absolute;
     margin-left: 3.5%;
     margin-top: 5%;
-    /*font-size: 50px;*/
     font-size: 3.5vw;
 }
 
