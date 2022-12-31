@@ -16,7 +16,7 @@ body{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../image/afro3.jpg);
     background-position: center;
     background-size: cover;
-    height: 155vh;
+    height: 130vh;
 }
 
 a, a:hover{
@@ -65,7 +65,7 @@ a, a:hover{
 @media screen and (max-width: 600px){
 
     .main{
-        height: 235vh;
+        height: 300vh;
     }
 
     footer{
