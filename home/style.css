@@ -16,7 +16,7 @@ body{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../image/afro3.jpg);
     background-position: center;
     background-size: cover;
-    height: 130vh;
+    height: 120vh;
 }
 
 a, a:hover{
@@ -61,6 +61,28 @@ a, a:hover{
     text-decoration: none;
 }
 
+#content h1{
+    text-align: center;
+    margin: 2.5% auto;
+}
+    
+.pad{
+    padding: 7% 15%;
+}
+.pad p{
+    font-size: 18px;
+}
+  
+#content hr{
+    border: none;
+    border-top: 5px solid #ef4b3f;
+    margin:auto;
+    width:8%;
+}
+
+footer{
+    background: #222;
+}
 
 @media screen and (max-width: 600px){
 
